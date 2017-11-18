@@ -1,13 +1,18 @@
 package com.comsys.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Userinfo {
-    private Integer id;
+public class Userinfo implements Serializable{
+	private static final long serialVersionUID = 3400482042648836506L;
+
+	private Integer id;
 
     private String name;
 
-    private Integer deptNo;
+    private Integer deptId;
+
+    private Integer roleId;
 
     private Date createTime;
 
@@ -29,12 +34,20 @@ public class Userinfo {
         this.name = name == null ? null : name.trim();
     }
 
-    public Integer getDeptNo() {
-        return deptNo;
+    public Integer getDeptId() {
+        return deptId;
     }
 
-    public void setDeptNo(Integer deptNo) {
-        this.deptNo = deptNo;
+    public void setDeptId(Integer deptId) {
+        this.deptId = deptId;
+    }
+
+    public Integer getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
     }
 
     public Date getCreateTime() {

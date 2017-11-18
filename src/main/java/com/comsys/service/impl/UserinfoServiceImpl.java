@@ -1,8 +1,6 @@
 package com.comsys.service.impl;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -28,10 +26,9 @@ public class UserinfoServiceImpl implements UserinfoService {
 	public PageBean queryByPage(int pageNo, int pageSize) {
 		int totalnum = userinfoMapper.countAll();
 		
-		Map<String, Object> map = new HashMap<String, Object>();
-		
+		/*Map<String, Object> map = new HashMap<String, Object>();
 		int start = (pageNo - 1) * pageSize;
-		/*map.put("start", start);
+		map.put("start", start);
 		map.put("pageSize", pageSize);
 		List<Userinfo> records = userinfoMapper.queryByPage(map);*/
 		

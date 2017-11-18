@@ -1,7 +1,6 @@
 package com.comsys.mapper;
 
 import java.util.List;
-import java.util.Map;
 
 import com.comsys.domain.Userinfo;
 
@@ -19,8 +18,6 @@ public interface UserinfoMapper {
     int updateByPrimaryKey(Userinfo record);
     
     int countAll();
-
-	List<Userinfo> queryByPage(Map<String, Object> map);
-	
-	public List<Userinfo> queryListPage();
+    
+    List<Userinfo> queryListPage();
 }

@@ -45,6 +45,10 @@
 	<mappers>
 		<mapper resource="mybatis/mapper/DepartmentMapper.xml" />
 		<mapper resource="mybatis/mapper/UserinfoMapper.xml" />
+		<mapper resource="mybatis/mapper/RoleMapper.xml" />
+		<mapper resource="mybatis/mapper/PrivilegesMapper.xml" />
+		<mapper resource="mybatis/mapper/UserRoleMapper.xml" />
+		<mapper resource="mybatis/mapper/RolePrivilegesMapper.xml" />
 	</mappers>
 
 </configuration>
